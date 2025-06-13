@@ -1,0 +1,144 @@
+body{
+    background-image: url('./main_imgs/back_img.webp');
+    background-size: 1920px 963px;
+}
+.slideshow-container{
+    width: 800px;
+	height: 780px;
+	position: fixed;
+}
+.slideshow-container img {
+    width: 800px;
+    height: 780px;
+    object-fit: cover;    /*根据图片大小自动填充像素*/
+    margin-left: 500px;
+	position: fixed;
+    display: none;       /*默认不展示图片，通过js控制图片的展示*/
+}
+#wenben{
+    font-size: 35px;
+    color: rebeccapurple;
+    font-family: '汉仪天宇风行体';
+}
+#text{
+    width: 260px;
+    height: 760px;
+	font-size: 18PX;
+    font-style: italic;
+    font-weight: 500;
+	margin-top: 50px;
+    margin-left: 50px;
+	position: fixed;
+	color: #0B1746;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+
+/*外层容器样式*/
+.wrap{
+	width: 400px;
+	height: 400px;
+	/*改变展示的位置*/
+	margin-left: 1400px;
+	position: relative;
+	
+}
+@-webkit-keyframes rotate{
+	from{transform: rotateX(0deg) rotateY(0deg);}
+	to{transform: rotateX(360deg) rotateY(360deg);}
+}
+/*内层容器样式*/
+.cube{
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	transform-style: preserve-3d;
+	transform: rotateX(-30deg) rotateY(-80deg);
+	-webkit-animation: rotate 20s infinite;
+	/*匀速*/
+	animation-timing-function: linear;
+}
+.cube div{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	opacity: 0.8;
+	transition: all .4s;
+}
+/*设置所有图片的大小*/
+.pic{
+	width: 200px;
+	height: 200px;
+}
+.cube .out_front{
+	transform: rotateY(0deg) ;
+}
+.cube .out_back{
+	transform: translateZ(-100px) rotateY(180deg);
+}
+.cube .out_left{
+	transform: rotateY(90deg) translateZ(100px);
+}
+.cube .out_right{
+	transform: rotateY(-90deg) translateZ(100px);
+}
+.cube .out_top{
+	transform: rotateX(90deg) translateZ(100px);
+}
+.cube .out_bottom{
+	transform: rotateX(-90deg) translateZ(100px);
+}
+
+/*设置小正方体样式*/
+.cube span{
+	display: block;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
+.cube .in_pic{
+	width: 100px;
+	height: 100px;
+}
+.cube .in_front{
+	transform: rotateY(0deg) translateZ(50px);
+}
+.cube .in_back{
+	transform: translateZ(-50px) rotateY(180deg);
+}
+.cube .in_left{
+	transform: rotateY(90deg) translateZ(50px);
+}
+.cube .in_right{
+	transform: rotateY(-90deg) translateZ(50px);
+}
+.cube .in_top{
+	transform: rotateX(90deg) translateZ(50px);
+}
+.cube .in_bottom{
+	transform: rotateX(-90deg) translateZ(50px);
+}
+/*鼠标移入后样式,外层移动*/
+.cube:hover .out_front{
+	transform: rotateY(0deg) translateZ(200px);
+}
+.cube:hover .out_back{
+	transform: translateZ(-200px) rotateY(180deg);
+}
+.cube:hover .out_left{
+	transform: rotateY(90deg) translateZ(200px);
+}
+.cube:hover .out_right{
+	transform: rotateY(-90deg) translateZ(200px);
+}
+.cube:hover .out_top{
+	transform: rotateX(90deg) translateZ(200px);
+}
+.cube:hover .out_bottom{
+	transform: rotateX(-90deg) translateZ(200px);
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="renderer" content="webkit" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-orientation" content="portrait" />
+    <title>故宫</title>
+    <link rel="stylesheet" type="text/css" href="css/slippry.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <style>
+        .all {
+            width: 100%;
+            height: 603px;
+            background: url(img/jtbanner.jpg);
+            background-size: 100% 100%;
+        }
+    </style>
+
+</head>
+
+<body class="neibody">
+
+    <div class="top">
+        <div class="w1200">
+            <ul>
+                <li>
+                    <a href="index.html">网站首页 </a>
+                </li>
+                <!-- <li>
+                    <a href="">品牌文化</a>
+                </li> -->
+                <li>
+                    <a href="details.html">故宫讲坛<b></b></a>
+                </li>
+                <!-- <li>
+                    <a href="index.html" class="logo"><img src="img/logo.png" /></a>
+                </li> -->
+                <li>
+                    <a href="case.html">文物展示 </a>
+                </li>
+                <li>
+                    <a href="serviceprice.html">专馆展览</a>
+                </li>
+                <li>
+                    <a href="news.html">历史沿革</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="all">
+
+    </div>
+
+    <div class="detailpage">
+        <div class="neitit">
+            <b class="b1"></b>
+            <h3>
+                <span>北京故宫 </span><b>TRIBUNE</b><b style="padding-right: 5px;">故宫</b><span>讲坛</span>
+            </h3>
+        </div>
+        <div class="w1200">
+            <div class="box">
+                <div class="de-tit">
+                    <h3>第一百六十四讲 香巴拉之旅：走近宗教、文化与艺术之城的扎什伦布寺
+                    </h3>
+                </div>
+                <div class="de-tutext">
+                    <img src="img/jt1.jpg" alt="" />
+                    <p>
+                        扎什伦布寺始建于1447年，以后迭经修建，成为日喀则地区最为壮丽的寺庙建筑群，也是点缀在年楚河上的一颗熠熠生辉的珍宝。完善的学经体系使扎什伦布寺成为格鲁派六大名寺之一；尼玛山上高耸的班禅灵塔殿和大雄宝殿，吸引人们到此顶礼膜拜；这里曾经见证过勉唐派大师勉拉顿珠和新勉唐画派大师曲英嘉措活跃的身影，开创了五百年藏传佛教绘画艺术之风气；17世纪晚期创立的扎什吉彩作坊成为扎什伦布寺官属手工艺中心，出品的铜造像以及各种法物、生活用品流布全藏，直入宮廷，深得乾隆帝的喜爱；寺内珍藏数以万计的来自于印度与喜马拉雅地区的古代铜佛造像，彰显其辉煌的历史和深厚的文化底蕴。
+                    </p>
+                </div>
+                <div class="fenpian">
+                    <p>
+                        <span>上一篇:</span><strong>第一百六十五讲
+                            武英聚珍——清宫木活字印刷</strong>
+                    </p>
+                    <p>
+                        <span>下一篇:</span><strong>第一百六十三讲
+                            班禅的历史传承轨迹</strong>
+                    </p>
+                </div>
+                <a href="" class="backlist">返回列表</a>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/flexslider-min.js"></script>
+    <script src="js/SuperSlide.2.1.3.js"></script>
+    <script src="js/slippry.min.js"></script>
+    <script src="js/more.js"></script>
+
+    <script>
+        var thumbs = jQuery('#thumbnails').slippry({
+            // general elements & wrapper
+            slippryWrapper: '<div class="slippry_box thumbnails" />',
+            // options
+            transition: 'horizontal',
+            pager: false,
+            auto: false,
+            onSlideBefore: function(el, index_old, index_new) {
+                jQuery('.thumbs a img').removeClass('active');
+                jQuery('img', jQuery('.thumbs a')[index_new]).addClass('active');
+            }
+        });
+
+        jQuery('.thumbs a').click(function() {
+            thumbs.goToSlide($(this).data('slide'));
+            return false;
+        });
+    </script>
+
+</body>
+
+</html>

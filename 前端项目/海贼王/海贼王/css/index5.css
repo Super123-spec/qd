@@ -1,0 +1,245 @@
+*{
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+}
+input{
+    outline: none;
+}
+html,
+body{
+    height: 100%;
+}
+body {
+    margin: 0 auto;
+    font-size: 14px;
+    color: #88888888;
+    position: relative;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.clearfix:after{/*伪元素是行内元素 正常浏览器清除浮动方法*/
+    content: "";
+    display: block;
+    height: 0;
+    clear:both;
+    visibility: hidden;
+}
+.clearfix{
+    *zoom: 1;/*ie6清除浮动的方式 *号只有IE6-IE7执行，其他浏览器不执行*/
+}
+img{
+    border: none;
+}
+a {
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+    outline: none;
+}
+ul {
+    list-style-type: none;
+}
+/* 去除列表前面的点 */
+li {
+    list-style: none;
+}
+.nav li:nth-child(5) a{
+    color: bisque;
+}
+em { 
+    font-style: normal;
+}
+/* 导航条 */
+header {
+    background-color: #000;
+    height: 50px;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 !important;
+}
+.nav li {
+    float: left;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.nav li a {
+    color: white;
+    font-size: 25px;
+    line-height: 50px;
+}
+/* 鼠标经过变色 */
+.nav li a:hover {
+    color: bisque;
+}
+.banner {
+    margin: 0 auto;
+    width: 99vw;
+    height: 650px;
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+.title h2 {
+    text-align: center;
+}
+
+main{
+    position: relative;
+    overflow-x: hidden;
+    display: flex;
+    background: linear-gradient(to right, rgb(247, 209, 215), rgb(191, 227, 241));
+}
+
+span{
+    position: absolute;
+    bottom: 0;
+    background: radial-gradient(circle at 72% 28%, #fff 3px, #ff7edf 8%, #5b5b5b, #aad7f9 100%);
+    box-shadow: inset 0 0 6px #fff,
+                inset 3px 0 6px #eaf5fc,
+                inset 2px -2px 10px #efcde6,
+                inset 0 0 60px #f9f6de,
+                0 0 20px #fff;
+    border-radius: 50%;
+    z-index: 0;
+    animation: mymove 4s linear infinite;
+}
+@keyframes mymove {
+    0%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    50%{
+        transform: translate(10%,-1000%);
+    }
+    75%{
+        transform: translate(-20%,-1200%);
+    }
+    99%{
+        opacity: .9;
+    }
+    100%{
+        transform: translateY(-1800%) scale(1.5);
+        opacity: 0;
+    }
+}
+.box{
+    width: 1050px;
+    height: 600px;
+    display: flex;
+    position: relative;
+    z-index: 2;
+    /* background-color: #fff; */
+    margin: auto;
+    border-radius: 8px;
+    border: 1px solid rgb(255, 255, 255, .6);
+    box-shadow: 4px 4px 3px rgb(0, 0, 0, .1);
+}
+.pre-box{
+    width: calc(1050px /2);
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    border-radius: 4px;
+    background-color: #edd4dc;
+    box-shadow: 4px 4px 3px rgb(0, 0, 0, .1);
+    transition: 0.5s ease-in-out;
+}
+.pre-box h1{
+    margin-top: 150px;
+    text-align: center;
+    color: white;
+    letter-spacing: 5px;
+    text-shadow: 4px 4px 3px rgb(0, 0, 0, .1);
+}
+.pre-box p{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    margin: 20px 0;
+    font-weight: bold;
+    text-shadow: 4px 4px 3px rgb(0, 0, 0, .1);
+}
+.img-box{
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 4px 4px 3px rgb(0, 0, 0, .1);
+}
+.img-box img{
+    width: 100%;
+    transition: 0.5s;
+}
+.login-form,
+.register-form{
+    flex: 1;
+    height: 100%;
+}
+.title-box{
+    height: 300px;
+    line-height: 500px;
+}
+.title-box h1{
+    text-align: center;
+    color: white;
+    letter-spacing: 5px;
+    text-shadow: 4px 4px 3px rgb(0, 0, 0, .1);
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    width: 60%;
+    height: 40px;
+    margin-bottom: 20px;
+    text-indent: 4px;
+    border: 1px solid #b0cfe9;
+    border-radius: 4px;
+}
+input:focus{
+    color: #b0cfe9;
+}
+input:focus::placeholder{
+    opacity: 0;
+}
+.btn-box{
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 100px;
+    height: 30px;
+    margin: 0 7px;
+    line-height: 30px;
+    border-radius: 4px;
+    border: none;
+    background-color: #69b3f0;
+    color: #fff;
+}
+button:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+.btn-box p{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: white;
+}
+.btn-box p:hover{
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}

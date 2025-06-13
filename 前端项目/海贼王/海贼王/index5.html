@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海贼王</title>
+    <link rel="stylesheet" href="./css/index5.css">
+</head>
+<body>
+    <div class="wrapin">
+        <div class="banner"><img src="./img/timg (5).gif" alt=""></div>
+        <header>
+            <ul class="nav clearfix">
+                <li><a href="./index1.html">首页</a></li>
+                <li><a href="./index2.html">人物集</a></li>
+                <li><a href="./index3.html">人物简介</a></li>
+                <li><a href="./index4.html">时间线</a></li>
+                <li><a href="./index5.html">登录</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <main>
+        <div class="box">
+            <div class="pre-box">
+                <h1>WELCOME</h1>
+                <p>JOIN US!</p>
+                <div class="img-box">
+                    <img id="img" src="./img/001.png" >
+                </div>
+            </div>
+            <div class="register-form">
+                <div class="title-box">
+                    <h1>注册</h1>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="用户名">
+                    <input type="password" placeholder="密码">
+                    <input type="password" placeholder="确认密码">
+                </div>
+                <div class="btn-box">
+                    <button>注册</button>
+                    <p onclick="mySwitch()">已有有账号？去登录</p>
+                </div>
+            </div>
+            <div class="login-form">
+                <div class="title-box">
+                    <h1>登录</h1>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="用户名">
+                    <input type="password" placeholder="密码">
+                </div>
+                <div class="btn-box">
+                    <button>登录</button>
+                    <p onclick="mySwitch()">没有账号？去注册</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- //引入jquery库 -->
+    <script>
+        let flag=true //生成一个flag等于对
+        const mySwitch=()=>{ //写函数
+            if(flag){ //if是如果，如果flag是对的
+                $(".pre-box").css("transform","translateX(100%)") //执行的内容，
+                $(".pre-box").css("background-color","#c9e0ed")
+                $("#img").attr("src","./img/002.png")
+            }else{ //否则执行以下代码
+                $(".pre-box").css("transform","translateX(0%)")
+                $(".pre-box").css("background-color","#edd4dc")
+                $("#img").attr("src","./img/001.png")
+            }
+            flag=!flag //flag不等于ture
+        }
+    </script>
+</body>
+</html>
