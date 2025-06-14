@@ -1,0 +1,181 @@
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+	border:0px;
+	list-style:none;
+	}
+.logo_beijing{
+	width:180px;
+	height:750px;
+	background-color:#7DB0BF;
+	position:relative;
+	float:left;
+	}
+.logo{
+	width:100%;
+	height:60px;
+	margin:0px auto;
+	z-index:20;
+	position:absolute; 
+    left:0; 
+    top:0; 
+	}
+.logo_left{
+	width:180px;
+	height:60px;
+	float:left;
+	margin:20px;
+	}
+.logo_left a{
+	text-decoration:none;
+	}
+.logo_left a p{
+	color:#FFF;
+	font-size:30px;
+	font-weight:bold;
+	text-shadow:2px 2px 2px #FFFFFF;
+	}
+.logo_left a span{
+	color:#FFF;
+	font-size:14px;
+	line-height:30px;
+	}
+.top_nav{
+	width:180px;
+	height:500px;
+	}
+.nav_none{
+	width:180px;
+	height:60px;
+	float:left;
+	position:relative;
+	line-height:60px;
+	text-align:center;
+	font-size:20px;
+	z-index:1000;
+	}
+.nav_none>a{
+	color:#fff;
+	text-decoration:none;
+	display:block;
+	width:180px;
+	height:60px;
+	border-bottom:1px solid #CCC;
+	}
+.nav_none>a:hover{
+	color:#CCC;
+	background-color:#FFF;
+	}
+#nav_one,#nav_two,#nav_three,
+#nav_four,#nav_five,#nav_six{
+	width:120px;
+ 	display:none;
+ 	position:absolute;
+ 	left:180px;
+ 	top:0px; 
+	border-radius:0px 8px 8px 8px;
+	line-height:30px;
+	text-align:center;
+	font-size:15px;
+    background-color:#fff; 
+	}
+#nav_one a,#nav_two a,#nav_three a,
+#nav_four a,#nav_five a,#nav_six a{
+	display:block;
+	color:#CCC; 
+	text-decoration:none;
+	}
+#nav_one>a:hover,#nav_two>a:hover,#nav_three>a:hover,
+#nav_four>a:hover,#nav_five>a:hover,#nav_six>a:hover{
+	color:#FFF;
+	background-color:#CCC;
+	}
+.two_box{
+	width:1338px;
+	height:710px;
+	margin-left:180px;
+	box-sizing:border-box;
+	}
+video{
+	width:400px;
+	height:400px;
+	}
+.container{
+	position:relative;
+	width:100%;
+	height:93%;
+	}
+.p1{
+	font-size:30px;
+	color:#000;
+	font-weight:bold;
+	}
+.container .box{
+	position:absolute;
+	top:28%;
+	left:35%;
+	width:400px;
+	height:400px;
+	transform-style:preserve-3d;/*表示所有子元素在3D空间呈现*/
+	transform:rotateX(-18deg) rotateY(17deg) translate3d(12px,-34px,-86px);/*旋转正方体在空间中的位置及投影的位置，前两个参数控制投影，第三个参数控制空间位置*/
+	}
+.container .box > div{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	transform-style:preserve-3d;
+	}
+.container .box > div span{
+	position:absolute;
+	top:0;
+	left:0;
+	display:block;
+	width:100%;
+	height:100%;
+	border:1px solid #666;
+	background:#ccc;
+	}
+.container .box > div span video{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	object-fit:cover;/*实现和背景图一样的效果*/
+	filter:blur(0px);
+	}
+.container video{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	filter:blur(20px);/*背景模糊*/
+	}
+.container .box > div span:nth-child(1){
+	transform:rotateX(0deg) translate3d(0,0,200px);
+	}
+.container .box > div span:nth-child(2){
+	transform:rotateX(-90deg) translate3d(0,0,-200px);
+	}
+.container .box > div span:nth-child(2) video{
+	transform:rotateY(180deg);
+	}
+.container .box > div span:nth-child(3){
+	transform:rotateY(-90deg) translate3d(0,0,200px);
+	}
+.three_box{
+	width:1518px;;
+	height:50px;
+	background-color:#7DB0BF;
+	}
+.three_box h2{
+	text-align:center;
+	color:#FFF;
+	line-height:50px;
+	font-family:"楷体";
+	}
