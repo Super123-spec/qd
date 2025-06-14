@@ -1,0 +1,157 @@
+ul {
+	list-style: none;
+}
+
+/* 模态框样式 */
+.btn-info {
+	border: 0;
+	border-radius: 0;
+	background-color: rgb(134, 206, 47);
+}
+
+/* 固定侧边栏的样式 */
+.slider-bar {
+	z-index: 99999;
+	position: fixed;
+	z-index: 999999999999;
+	margin-top: 25%;
+	margin-left: 95%;
+	width: 95px;
+	height: 115px;
+	font-size: 17px;
+	background-color: white;
+	border-radius: 9px;
+	color: rgb(32, 32, 32);
+}
+
+.slider-bar:hover {
+	background-color: rgb(32, 32, 32);
+	color: white;
+}
+
+.btn-info:hover {
+	background-color: rgb(142, 218, 49);
+}
+
+/* js表单验证需要用到的样式 */
+.error {
+	border: 1px solid #FF3300;
+	background: #FFF2E5;
+	font-size: 10px;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 10px;
+	padding: 0 10px;
+}
+
+.success {
+	border: 1px solid #01BE00;
+	background: #E6FEE4;
+	font-size: 10px;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 10px;
+	padding: 0 10px;
+}
+/* 导航栏样式 */
+.num {
+	padding-top: 0px;
+	padding-bottom: 2px;
+	padding-left: 6px;
+	padding-right: 6px;
+	background-color: orangered;
+	border-radius: 50%;
+	color: white;
+}
+
+.navbar-brand {
+	background-image: url(../img/shoplogo.png);
+	background-repeat: no-repeat;
+	background-position: -2px -147px;
+	width: 320px;
+	height: 40px;
+}
+
+.btn-sm {
+	height: 32px;
+	width: 40px;
+	border-radius: 0px;
+	background-color: rgb(250, 79, 23);
+}
+
+.btn-sm:hover {
+	background-color: rgb(220, 66, 19);
+}
+
+.form-control-sm {
+	border-radius: 0px;
+}
+
+.popover-content {
+	width: 160px;
+}
+
+.popover-content a {
+	cursor: pointer;
+}
+
+.border-orange {
+	border-radius: 0;
+	border-top: 3px solid orangered;
+}
+
+.orange :hover {
+	cursor: pointer;
+	color: orangered !important;
+}
+
+
+.nav-item {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.nav-item a:hover {
+	color: orangered !important;
+}
+/* 轮播图样式 */
+.carousel-indicators {
+	margin-bottom: 10px;
+}
+
+.carousel-indicators li {
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	background-color: white !important;
+	opacity: 1;
+	margin-left: 8px;
+}
+
+.carousel-indicators .active {
+	background-color: red !important;
+}
+
+.content .col-3 {
+	cursor: pointer;
+}
+/* 页尾样式 */
+.fuwu1 {
+	padding: 19px;
+	background: url(../img/base.png) no-repeat -10px -234px;
+}
+
+.fuwu2 {
+	padding: 19px;
+	background: url(../img/base.png) no-repeat -73px -234px;
+}
+
+.fuwu3 {
+	padding: 19px;
+	background: url(../img/base.png) no-repeat -179px -234px;
+}
+
+.footer a {
+	font-size: 12px;
+}
+

@@ -1,0 +1,228 @@
+/* 将所有元素的边距和内边距设置为0 */  
+* {  
+    margin: 0;  
+    padding: 0;  
+}  
+  
+/* 设置body元素的背景颜色为灰色 */  
+body{  
+    background-color: #B0B0B0;  
+}  
+  
+/* 定义header元素的样式 */  
+.header{  
+    width: 100%;                  /* 宽度为100% */  
+    height: 60px;                 /* 高度为60像素 */  
+    margin: 0 auto;               /* 上下边距为0，左右自动对齐 */  
+    background-color: #000000;     /* 背景颜色为黑色 */  
+}  
+  
+/* 定义he元素的样式 */  
+.he{  
+    width: 1000px;                /* 宽度为1000像素 */  
+    margin: 0 auto;               /* 上下边距为0，左右自动对齐 */  
+}  
+  
+/* 定义he_1元素的样式 */  
+.he_1{  
+    float: left;                 /* 左浮动 */  
+}  
+  
+/* 定义he_2元素的样式 */  
+.he_2{  
+    float: right;                /* 右浮动 */  
+}  
+  
+/* 定义he_2下的ul元素的样式 */  
+.he_2 ul{  
+    float: left;                 /* 左浮动 */  
+    padding: 0;                   /* 内边距为0 */  
+    margin: 0;                    /* 外边距为0 */  
+}  
+  
+/* 定义he_2下的ul的li元素的样式 */  
+.he_2 ul li{  
+    float: left;                 /* 左浮动 */  
+    list-style: none;             /* 不显示列表标记 */  
+}  
+  
+/* 定义he_2下的ul的li的a元素的样式 */  
+.he_2 ul li a{  
+    text-decoration: none;        /* 无下划线 */  
+    color: white;                 /* 文字颜色为白色 */  
+    line-height: 60px;            /* 行高为60像素 */  
+    margin: 0 30px;               /* 上下外边距为0，左右外边距为30像素 */  
+}  
+  
+/* 当li有active类时，a元素的样式 */  
+.he_2 ul li.active a{  
+    font-weight: 900;             /* 字体加粗 */  
+}  
+  
+/* 定义banner元素的样式 */  
+.banner{  
+    margin-top: 20px;             /* 上外边距为20像素 */  
+}  
+  
+/* 定义banner下的img元素的样式 */  
+.banner img{  
+    width: 100%;                  /* 宽度为100% */  
+}  
+  
+/* 定义hm_1的h3元素的样式 */  
+.hm_1 h3{  
+    text-align: center;          /* 文字居中 */  
+    font-weight: 900;             /* 字体加粗 */  
+    margin: 20px 0;               /* 上外边距为20像素，左右外边距为0 */  
+}  
+  
+/* 定义hm_2元素的样式 */  
+.hm_2{  
+    float: left;                 /* 左浮动 */  
+    width: 500px;                 /* 宽度为500像素 */  
+    text-indent: 2em;             /* 首行文本缩进2em */  
+    padding: 0 50px;              /* 内边距上下为0，左右为50像素 */  
+    box-sizing: border-box;       /* box-sizing属性包括边框和内边距 */  
+}  
+/* 定义hm_3元素的样式 */  
+
+.hm_3 img{
+    float:right;
+    width: 40%;                    /* 宽度为40% */  
+    height:500px;                  /* 高度为500像素*/
+
+}
+.hm_3 li{  
+    list-style: none;   /* 不显示列表标记 */
+      
+}  
+
+.zy{  
+    margin-top: 20px;             /* 上外边距为20像素 */  
+}  
+
+.zy_1 ul{  
+    list-style: none;   /* 不显示列表标记 */
+    display: flex;  
+    justify-content: space-between;  
+}  
+
+ 
+.zy_1 img{
+              
+            width: 200px;  /* 你可以根据需要调整图片的宽度 */  
+            height: 200px; /* 你可以根据需要调整图片的高度 */  
+            border-radius: 50%; /* 使图片成为一个圆形 */  
+            transition: transform 0.3s ease-in-out; /* 放大效果的过渡效果 */  
+        }  
+  
+.zy_1 img:hover {  
+            transform: scale(1.2); /* 鼠标悬停时放大图片 */  
+        }  
+.zy_2 img{  
+    width: 1000px;                /* 宽度为1000像素 */  
+    height:100%
+    margin:0px auto;               /* 上下边距为0，左右自动对齐 */  
+} 
+
+.zy_2 li{  
+    list-style: none;   /* 不显示列表标记 */
+    margin:15px auto;
+      
+}  
+
+
+.pic_con li {
+        display: grid;  /* 将元素设置为网格容器 */ 
+        grid-template-columns: repeat(3, 1fr);  /* 网格有3列，每列宽度为1fr  */
+        grid-gap: 20px;   /*  网格项之间的间隙为20px */
+	padding: 15px;    /*  内边距为15px */
+        list-style: none;   /* 不显示列表标记 */
+}
+.pic_con li img {
+	width: 100%;
+	height: 240px;
+	object-fit:  cover;
+        transition: transform 0.2s ease-in-out; /* 放大效果的过渡效果 */  
+}
+.pic_con img:hover {  
+            transform: scale(1.2); /* 鼠标悬停时放大图片 */  
+        }  
+
+  
+/*   
+   .renwu_box li 类定义  
+   position: relative; 设置位置为相对位置  
+   height:220px; 设置高度为 220px  
+   padding-bottom: 15px; 设置底部内边距为 15px  
+   border-bottom: 1px dashed #ccc; 设置底部边框为1px宽的虚线，颜色为 #ccc  
+   margin-bottom: 15px; 设置底部外边距为 15px  
+*/  
+.renwu_box li {  
+ position: relative;  
+ height: 220px;  
+ padding-bottom: 15px;  
+ border-bottom: 1px dashed #ccc;  
+ margin-bottom: 15px;  
+ list-style: none;
+}  
+  
+/*   
+   .renwu_box li .pic 子类定义  
+   width: 150px; 设置宽度为 150px  
+   height: 220px; 设置高度为 220px  
+   position: absolute; 设置位置为绝对位置  
+   left: 50px; top: 0; 设置从左边50px和顶部0为开始位置  
+*/  
+.renwu_box li .pic {  
+ width: 150px;  
+ height: 220px;  
+ position: absolute;  
+ left: 50px;  
+ top: 0; 
+ 
+}  
+  
+/*   
+   .renwu_box li .pic img 子类定义  
+   width: 100%; height: 100%; 设置图片的宽度和高度都为100%  
+   object-fit: cover; 设置图片的填充方式为覆盖，保持图片的纵横比不变，同时填充元素的整个内容框区域，可能部分图片会被裁剪以适应元素的大小。  
+*/  
+.renwu_box li .pic img {  
+ width: 100%;  
+ height: 100%;  
+ object-fit: contain;
+ mix-blend-mode: multiply; /* 设置混合模式为multiply */  
+ 
+}  
+
+/*   
+   .renwu_box li .text 子类定义  
+   margin-left: 280px; 设置左边外边距为 280px，使文字从图片的右边开始显示  
+   font-size: 16px; 设置字体大小为 16px  
+   line-height: 28px; 设置行高为 28px  
+   color: #333; 设置字体颜色为 #333 (深灰色)  
+*/  
+.renwu_box li .text {  
+ margin-left: 280px;  
+ font-size: 16px;  
+ line-height: 28px;  
+ color: #000000;  
+ 
+}
+
+footer {
+	width: 100%;                  /* 宽度为100% */  
+        height: 60px;                 /* 高度为60像素 */   
+        background-color: #000000;     /* 背景颜色为黑色 */  
+        text-align: center;          /* 文字居中 */ 
+        
+}
+footer a {
+         text-decoration: none;        /* 无下划线 */  
+         font-size: 20px;              /* 文字大小为20px */
+         color: white;                 /* 文字颜色为白色 */  
+         line-height: 60px;            /* 行高为60像素 */  
+         margin: 0 30px;               /* 上下外边距为0，左右外边距为30像素 */    
+          
+}
