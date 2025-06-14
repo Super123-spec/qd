@@ -1,0 +1,184 @@
+/* ----------------------common css---------------------- */
+*{ margin:0; padding:0; font-family:黑体,微軟正黑體 Verdana, Geneva, sans-serif；}
+.clear{ clear:both;}
+.fl{ float:left;}
+.fr{ float:right;}
+.f12{ font-size:12px;}
+.f14{ font-size:14px;}
+.f16{ font-size:16px;}
+.f18{ font-size:18px;}
+.f20{ font-size:20px;}
+.w120{ width:120px;}
+.w150{ width:150px;}
+.m3{ margin:3px;}
+.m5{ margin:5px;}
+.m10{ margin:10px;}
+.m20{ margin:20px;}
+.mt10{ padding-top:10px;}
+.mt20{ padding-top:20px;}
+.mt30{ padding-top:30px;}
+.mt50{ padding-top:50px;}
+.mt55{margin-top:55px;}
+.mr20{ margin-right:20px;}
+.mr30{ margin-right:30px;}
+.mr50{ margin-right:50px;}
+.mr60{ margin-right:60px;}
+.mr70{ margin-right:70px;}
+.mr80{ margin-right:80px;}
+.mr90{ margin-right:90px;}
+.mr100{ margin-right:100px;}
+.mr120{ margin-right:120px;}
+.ml30{ margin-left:30px;}
+.ml50{ margin-left:50px;}
+.ml60{ margin-left:60px;}
+.ml70{ margin-left:70px;}
+.ml80{ margin-left:80px;}
+.ml90{ margin-left:90px;}
+.ml100{ margin-left:100px;}
+.ml120{ margin-left:120px;}
+.ml130{ margin-left:130px;}
+.ml140{ margin-left:140px;}
+.ml150{ margin-left:150px;}
+.ml250{ margin-left:250px;}
+.ml350{ margin-left:350px;}
+.ml450{ margin-left:450px;}
+.m265{ margin-top:-265px;}
+.fwn{ font-weight:normal}
+.fw{ font-weight:bold}
+.p3{ padding:3px;}
+.p5{ padding:5px 10px;}
+.p8{ padding:8px;}
+.p10{ padding:10px;}
+.p15{ padding:15px;}
+.pl30{ padding-left:30px;}
+.pt10{ padding-top:10px;}
+img{ border:none;}
+a{ text-decoration:none; color:#666666;}
+a:hover{ text-decoration:none; color:#000;}
+p{ color:#666;}
+.center{text-align:center}
+.fff{ color:#fff;}
+.red{ color:#F00; font-weight:bold;}
+.c70{ color:#704052}
+.c5b{ color:#5b4d3c;}
+.ca3{ color:#a38786;}
+li{ list-style-type:none;}
+
+.boder{ border-bottom:1px solid #ccc;}
+.bc1{ background-color:#c15262;}
+.be1{ background-color:#848d86;}
+.b4d{background-color:#4d4d4d;}
+.b3a{background-color:#3a493e;}
+.memberbj{ width:240px; height:20px; padding:5px; text-align:center; background-color:#4c4c4c;}
+.boderradio{ -moz-border-radius:5px;border-radius:5px;}
+.tilte{ color:#be5462; font-size:18px; font-weight:bold; float:left; padding:2px;}
+
+/* ----------------------head css---------------------- */
+#head{ width:990px; height:160px; margin:auto;}
+#logo{ width:160px; height:140px; float:left; margin-top:20px; margin-left:20px;}
+#nav{ width:620px; height:100px; margin-top:50px;  float:left;}
+#nav li{ width:100px; height:80px;  float:left; border-right: #663300 dashed 1px; overflow:hidden; margin:10px;}
+#share{ width:160px; height:60px;  margin-top:80px; float:left;}
+/*---------------------- common css ----------------------*/
+#common_main{ width:990px; height:auto; margin:30px auto;}
+#common_left{width:190px; height:700px; float:left; margin:auto;overflow:hidden;}
+#common_left_ad1{width:170px; height:320px;  border:solid 1px #888;margin:5px auto; padding:5px; float:left; overflow:hidden;}
+#common_left_ad2{width:170px; height:320px;  border:solid 1px #888;margin:5px auto; padding:5px; float:left; overflow:hidden;}
+#common_right{ width:790px; height:auto;  float:left;margin:auto; margin-left:5px;overflow:hidden;}
+
+/*---------------------- footer css ----------------------*/
+#footer{ width:990px; height:120px; margin:auto; }
+#footer_info{ width:990px; height:50px;  background-color:#4d4d4d;margin:5px auto; }
+#footer_info a{ padding:5px;font-size:15px; border:1px solid #fff;background-color:#4d4d4d; color:#FFFFFF;}
+#footer_info a:hover{background-color:#b3b0b9; }
+#footer_info p{ color:#FFFFFF; font-size:13px;}
+
+/*---------------------- index css ----------------------*/
+#ad{ width:990px; height:300px; margin:auto; overflow:hidden;}
+#index_main{ width:990px; height:auto; margin:30px auto;}
+#index_left{ width:190px; height:700px; float:left; margin:auto;overflow:hidden;}
+#index_left_ad1{ width:170px; height:320px;  border:solid 1px #888;margin:5px auto; padding:5px; float:left; overflow:hidden;}
+#index_left_ad2{ width:170px; height:320px; border:solid 1px #ccc; margin:5px auto;padding:5px;  float:left;  overflow:hidden;}
+#index_right{ width:790px; height:auto;  float:left;margin:auto; margin-left:5px;overflow:hidden;}
+#index_new_top{width:790px; height:50px; background:url(../images/new.jpg)  top no-repeat; margin:5px;border-bottom:#9d8982  dashed 1px; }
+#index_right ul{ width:690px; margin-left:25px;overflow:hidden;}
+#index_right li{ width:600px; height:20px;  float:left;margin-left:5px; background:url(../images/dotleft.gif) no-repeat; margin:5px;overflow:hidden;}
+#index_right li a{ color:#999; font-size:16px; font-weight:bold; padding:8px; padding-left:20px;}
+#index_right li a:hover{ color:#333; }
+.more{ background-color:#bd5461; padding:5px 15px; color:#FFFFFF;}
+.more a{ color:#FFFFFF; font-weight:bold}
+.more:hover{ background-color:#ba1c30;}
+#index_right_buttom{ width:790px; height:350px; padding-top:75px; float:left;  overflow:hidden;}
+{ color:#be5462; font-size:18px; font-weight:bold; float:left;}
+#index_right_l{float:left; }
+#index_right_r{float:right; }
+#index_right_zhuda{ width:375px; height:295px;padding:5px;overflow:hidden; border:solid 1px #888;float:left;}
+
+#index_list{ width:750px; height:200px; float:left; overflow:hidden; padding:20px auto; margin:10px auto; margin-left:30px; border-bottom:1px solid #a5a3ae;}
+#index_list img{ width:185px; float:left; height:185px;}
+#index_listr{ width:540px; height:180px; float:left; margin-left:10px; overflow:hidden; color:#666; }
+#index_list_title{ width:650px; height:30px; float:left; overflow:hidden; font-size:22px; font-weight:bold;}
+#index_list_title a{font-size:22px; font-weight:bold;}
+#index_list_de{ width:700px; height:160px; float:left; overflow:hidden; font-size:14px}
+
+#index_top_banner{width:790px; height:160px; overflow:hidden;}
+#index_new_main{width:790px; height:auto; float:left;}
+#index_new_tltle{width:690px; height:auto; float:left;padding:10px; color:#6f3742;}
+#index_new_leftd{width:390px; height:auto; float:left; padding:10px;color:#666; line-height:22px;}
+#index_new_rightad{width:390px; height:310px; margin:10px; float:left; }
+#index_new_other{width:790px; height:180px; float:left; }
+
+
+
+/*---------------------- happy css ----------------------*/
+#happy_list{width:790px; height:160px; float:left; border-bottom: dashed 1px #bbb; padding:10px;}
+#happy_list ul{float:left;}
+#happy_list li{float:left; margin:10px;}
+#happy_list input{ width:80px; height:20px; border:1px solid #000;}
+#happy_list select,#play_divd select{width:83px; height:20px; border:1px solid #000;}
+#happy_inputdata{width:820px; height:553px; margin:auto; border:2px solid #555;}
+#happy_ok{width:822px; height:282px;margin:auto; border:2px solid #555;}
+#happy_boder{width:822px; height:2px;margin:10px auto; border:1px solid #555;}
+/*---------------------- member css ----------------------*/
+#member_main{width:900px; height:auto; margin:30px auto; margin-left:150px;}
+#signin{ width:400px; height:330px; padding:10px;margin:80px auto; float:left; }
+.meminput{ width:240px; height:20px; padding:5px; }
+#join{ width:400px; height:330px; padding:10px; margin:80px auto;float:left; border-left:1px dashed #ccc;}
+
+#ddchayue{width:890px; height:230px; margin:30px auto; }
+#ddchayue_top{width:890px; height:30px; }
+#ddchayue_top ul{width:700px; height:30px; float:left; margin-top:15px; border-bottom:3px solid #ccc; border-top:3px solid #ccc; }
+#ddchayue_top li{ float:left; padding:5px 50px;}
+#ddchayue_top img{ float:left; padding:5px;}
+#memin{width:560px; height:auto; margin:auto;}
+#membodera{ width:760px; height:0px; border:1px solid #4d4d4d; float:right; margin-top:20px;}
+#memboderb{ width:760px; height:0px; border:1px  dashed #4d4d4d; float:right; margin-top:20px;}
+#memboderc{ height:0px; border-bottom:2px  solid #9da29e;}
+.meminput2{ width:340px; height:25px; padding:5px; float:right;}
+.meminput3{ width:340px; height:55px; padding:5px; float:right;}
+.meminput4{ width:240px; height:25px; padding:5px; float:right;}
+#mem_jindu{ width:850px; height:40px; padding:10px; }
+/*---------------------- play css ----------------------*/
+#play_main{width:800px; height:auto;margin:20px; padding:10px; }
+#play_diva{width:300px; height:270px;margin:20px; padding:5px; float:left; border:1px solid #555; overflow:hidden;}
+#play_divb{width:185px; height:230px;margin:10px 1px; float:left; border:1px solid #555;overflow:hidden;}
+#play_divc{width:230px; height:240px;margin:5px; padding:5px; float:left; border:1px solid #555;overflow:hidden;}
+#play_divd{width:390px; height:auto;   float:left; overflow:hidden;}
+#play_divd_title{width:360px; height:40px; border-bottom:1px dashed #555; float:left; overflow:hidden;}
+#play_divd_size{width:340px; height:340px;padding:5px; margin:5px auto; float:right; border:1px solid #555;overflow:hidden;}
+#play_divd_like{width:360px; height:120px;padding:5px;  float:right; border-top:1px dashed #555;overflow:hidden;}
+#play_divd_like li{padding:5px;  float:left; width:80px; height:65px; overflow:hidden;  }
+
+/*---------------------- 購物說明 css ----------------------*/
+#shuoming{width:822px; height:auto;margin:auto; margin-top:180px; }
+#shuoming_list{width:822px; height:210px;margin:10px auto;}
+#shuoming_list h2{ display:block;width:822px; height:30px; border-bottom:1px dashed #bbb; font-size:16px; color:#666666; font-weight:normal;}
+
+
+
+
+
+
+
+
+

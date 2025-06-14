@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="renderer" content="webkit" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-orientation" content="portrait" />
+    <title>故宫</title>
+    <link rel="stylesheet" type="text/css" href="css/slippry.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body class="neibody">
+
+    <div class="top">
+        <div class="w1200">
+            <ul>
+                <li>
+                    <a href="index.html">网站首页 </a>
+                </li>
+                <!-- <li>
+                    <a href="">品牌文化</a>
+                </li> -->
+                <li>
+                    <a href="details.html">故宫讲坛<b></b></a>
+                </li>
+                <!-- <li>
+                    <a href="index.html" class="logo"><img src="img/logo.png" /></a>
+                </li> -->
+                <li>
+                    <a href="case.html">文物展示 </a>
+                </li>
+                <li>
+                    <a href="serviceprice.html">专馆展览</a>
+                </li>
+                <li>
+                    <a href="news.html">历史沿革</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="neibanenr">
+        <img src="img/zgbanner.jpg" />
+    </div>
+
+    <div class="pricepage">
+        <div class="neitit">
+
+            <b class="b1"></b>
+            <h3>
+                <span>北京故宫 </span><b>OHIOSPORT</b><b style="padding-right: 5px;">专馆</b><span>展览</span>
+            </h3>
+            <br>
+        </div>
+        <div class="w1200">
+            <ul>
+                <li>
+                    <a href="">
+                        <figure><img src="img/jg1.jpg" /></figure>
+                        <figcaption>
+                            <h3>钟鸣盛世：紫禁城和承德避暑山庄藏钟表联展</h3>
+                            <strong><b>展览地点：乾清宫东庑展厅</b></strong>
+                            <span>点击查看详情</span>
+                            <p>展览时间：2022/01/26- 2022/05/08【在展】需预约</p>
+                        </figcaption>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure><img src="img/jg2.jpg" /></figure>
+                        <figcaption>
+                            <h3>何以中国</h3>
+                            <strong><b>展览地点：文华殿展厅</b></strong>
+                            <span>点击查看详情</span>
+                            <p>展览时间：2022/01/26- 2022/05/04【在展】需预约</p>
+                        </figcaption>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure><img src="img/jg3.jpg" /></figure>
+                        <figcaption>
+                            <h3>庆隆尊养——崇庆皇太后专题展</h3>
+                            <strong><b>展览地点：寿康宫展厅</b></strong>
+                            <span>点击查看详情</span>
+                            <p>常设展览【在展】</p>
+                        </figcaption>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure><img src="img/jg4.jpg" /></figure>
+                        <figcaption>
+                            <h3>陶瓷馆</h3>
+                            <strong><b>展览地点：武英殿</b></strong>
+                            <span>点击查看详情</span>
+                            <p>展览时间：2021.05.01-待定【在展】需预约</p>
+                        </figcaption>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <figure><img src="img/jg5.jpg" /></figure>
+                        <figcaption>
+                            <h3>钟表馆</h3>
+                            <strong><b>展览地点：奉先殿</b></strong>
+                            <span>点击查看详情</span>
+                            <p>展览时间：2019.01.18-待定【在展】需预约</p>
+                        </figcaption>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/flexslider-min.js"></script>
+    <script src="js/SuperSlide.2.1.3.js"></script>
+    <script src="js/slippry.min.js"></script>
+    <script src="js/more.js"></script>
+
+    <script>
+        var thumbs = jQuery('#thumbnails').slippry({
+            // general elements & wrapper
+            slippryWrapper: '<div class="slippry_box thumbnails" />',
+            // options
+            transition: 'horizontal',
+            pager: false,
+            auto: false,
+            onSlideBefore: function(el, index_old, index_new) {
+                jQuery('.thumbs a img').removeClass('active');
+                jQuery('img', jQuery('.thumbs a')[index_new]).addClass('active');
+            }
+        });
+
+        jQuery('.thumbs a').click(function() {
+            thumbs.goToSlide($(this).data('slide'));
+            return false;
+        });
+    </script>
+
+</body>
+
+</html>

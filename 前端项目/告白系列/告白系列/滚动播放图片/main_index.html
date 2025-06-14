@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>love</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./字体/汉仪天宇风行体.ttf">
+    <marquee direction = left><p id="wenben">编程走向未来</p></marquee>
+</head>
+
+<body>
+    <audio id="myAudio" controls>
+        <source src="./music/晚风告白.mp3" type="audio/mp3">
+    </audio>
+	<p><a href="https://ct_xx.gitee.io/development-revenue/message.html"  target="blank">更多知识点这里了解</a> |</p>
+    <div id="text"></div>
+    <div class="slideshow-container"> <!-- 主页图片在这里加载--></div>
+    <div class="wrap">
+        <!--	/*包裹所有元素的容器*/-->
+        <div class="cube">
+            <!--前面图片 -->
+            <div class="out_front">
+                <img src="./xz_imgs/1.webp" class="pic">
+            </div>
+            <!--后面图片 -->
+            <div class="out_back">
+                <img src="./xz_imgs/2.webp" class="pic">
+            </div>
+            <!--左图片 -->
+            <div class="out_left">
+                <img src="./xz_imgs/3.webp" class="pic">
+            </div>
+            <!--右图片 -->
+            <div class="out_right">
+                <img src="./xz_imgs/4.webp" class="pic">
+            </div>
+            <!--上图片 -->
+            <div class="out_top">
+                <img src="./xz_imgs/5.webp" class="pic">
+            </div>
+            <!--下图片 -->
+            <div class="out_bottom">
+                <img src="./xz_imgs/6.webp" class="pic">
+            </div>
+            <!--小正方体 --> 
+            <span class="in_front">
+                <img src="./xz_imgs/7.webp" class="in_pic">
+            </span>
+            <span class="in_back">
+                 <img src="./xz_imgs/8.webp" class="in_pic">
+            </span>
+            <span class="in_left">
+                <img src="./xz_imgs/9.webp" class="in_pic">
+            </span>
+            <span class="in_right">
+                <img src="./xz_imgs/10.webp" class="in_pic">
+            </span>
+            <span class="in_top">
+                <img src="./xz_imgs/11.webp" class="in_pic">
+            </span>
+            <span class="in_bottom">
+                <img src="./xz_imgs/12.webp" class="in_pic">
+            </span>
+        </div>
+    </div>
+    </div>
+    <script src="scripts.js">
+        window.onload = function() {
+            var audio = document.getElementById("myAudio");
+            setTimeout(function() {
+                audio.play();
+            }); // 延迟500毫秒后播放音乐
+        }
+    </script>
+</body>
+</html>
